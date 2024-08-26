@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Трейдер посмотри</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <header>
+        <div class="sales">
+            <div class="rectangle3"></div>
+            <div class="rectangle2"></div>
+            <div class="rectangle"></div>
+        </div>
+        <div class="wrapper">
+            <nav>
+                <a class="logo_txt" href="index.html">
+                    <img src="img/logo.svg" alt="">
+                    <p>ТРЕЙДЕР  <br><span>ПОСМОТРИ</span></p>
+                </a>
+                <ul class="ul_nav" id="ul_nav">
+                    <div class="close-icon" onclick="toggleMenu()">×</div>
+                    <li class="li_nav1"><a href="index.html"><p>Главная</p></a></li>
+                    <li class="li_nav"><a href="pages/ivents.html"><p>Розыгрыши</p></a></li>
+                    <li class="li_nav"><a href="#faq"><p>FAQ</p></a></li>
+                    <li class="li_nav"><a href="help.html"><p>Помощь</p></a></li>
+                    <li class="li_nav dropdown-mobile">
+                        <a href="pages/profile.html"><p>Мой профиль</p></a>
+                    </li>
+                    <li class="li_nav dropdown-mobile">
+                        <a href="pages/step_one.html"><p>Скачать ПО</p></a>
+                    </li>
+                    <li class="li_nav dropdown-mobile">
+                        <a href="pages/keys.html"><p>Ключи</p></a>
+                    </li>
+                </ul>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="dropdown dropdown-desktop">
+                    <button id="profile-button" onclick="myFunction()" class="dropbtn">Личный кабинет</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="pages/profile.html">Мой профиль</a>
+                        <div class="line"></div>
+                        <a href="pages/step_one.html">Скачать ПО</a>
+                        <div class="line"></div>
+                        <a href="pages/keys.html">Ключи</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+    </header>
+    
+    <main >
+        <div class="wrapper">
+            <div class="salary">
+                <div class="text_salary">
+                    <h1 class="fade-in" data-aos="fade-up"
+                    data-aos-duration="1500">Зарабатывайте от $500 в день</h1>
+                    <p class="accsses" data-aos="fade-up"
+                    data-aos-duration="1500">Получите доступ к автоматизированному роботу для заработка на бинарных опционах</p>
+                    <div class="line2" data-aos="fade-up"
+                    data-aos-duration="1500"></div>
+                    <button class="reg" data-aos="fade-up"
+                    data-aos-duration="1500">Зарегистрироваться</button>
+                    <div class="overlay" id="overlay"></div>
+                    <div class="popup" id="popup">
+                        <span class="close" id="closePopup">&times;</span>
+                        <h2>Регистрация</h2>
+                        <form>
+                            <p class="PO">Чтобы у вас был доступ к ПО <br>создайте аккаунт в личном кабинете</p>
+                            <div class="margin_input">
+                                <input type="text" id="name" name="name" placeholder="Ваше Имя">
+                            </div>
+                            <div class="margin_input">
+                                <input type="text" id="surname" name="surname" placeholder="Ваша Фамилия">
+                            </div>
+                            <div class="margin_input">
+                                <input type="email" id="email" name="email" placeholder="Ваш e-mail">
+                            </div>
+                            <div class="margin_input">
+                                <input type="text" id="telegram" name="telegram" placeholder="Ваш Telegram">
+                            </div>
+                            <div class="margin_input">
+                                <label>
+                                    <input type="checkbox" id="agree" name="agree" required>
+                                    <p class="suggest">Вы подтверждаете согласие на обработку персональных данных в соответствии с условиями <a href="#">Политики обработки данных</a> и <a href="#">Договора об оказании услуг</a></p>
+                                </label>
+                            </div>
+                            <button type="submit" class="reg2">Зарегистрироваться</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="graph" data-aos="fade-up"
+                data-aos-duration="1500">
+                    <div class="sales2 ">
+                        <div class="rec2"></div>
+                        <div class="rec3"></div>
+                        <div class="rec4"></div>
+                        <div class="rec5"></div>
+                        <div class="rec7"></div>
+                        <div class="rec6"></div>
+                    </div>
+                </div>
+                <img src="img/graph2.png" alt=" " class="graph2" data-aos="fade-up"
+                data-aos-duration="1500">
+            </div>
+
+            <div class="sales_back" data-aos="fade-up"
+            data-aos-duration="1500">
+                <div class="rectangle_back1 "></div>
+                <div class="rectangle_back2"></div>
+                <div class="rectangle_back3"></div>
+                <div class="rectangle_back4"></div>
+                <div class="rectangle_back5"></div>
+                <div class="rectangle_back6"></div>
+            </div>
+
+            <div class="sales_back_phone" data-aos="fade-up"
+            data-aos-duration="1500">
+                <div class="rectangle_back_phone1"></div>
+                <div class="rectangle_back_phone2"></div>
+                <div class="rectangle_back_phone3"></div>
+                <div class="rectangle_back_phone4"></div>
+                <div class="rectangle_back_phone5"></div>
+                <div class="rectangle_back_phone6"></div>
+            </div>
+
+            <div class="manual" data-aos="fade-up"
+            data-aos-duration="1500">
+                <div class="phone ">
+                    <img src="img/iPhone 15 Pro.png" alt="" class="image2"> 
+                </div>
+                <div class="how_it_works">
+                    <h1>КАК РАБОТАЕТ АВТОМАТИЗАЦИЯ <span>АРБИТРАЖА КОТИРОВОК</span></h1>
+                    <p class="treid">Чтобы зарабатывать на трейдинге, необязательно угадывать
+                        движение цен финансовых активов или разбираться в
+                        сложных графиках.
+                    </p>
+                    <p class="treid">Поручите торговлю бинарными опционами проверенному на
+                        практике ПО: робот автоматически проставит сделку по
+                        вашим настройкам еще до того, как информация о цене
+                        появится у брокера.
+                    </p>
+                    <div class="line3"></div>
+                    <div class="numbers">
+                        <div class="number">
+                            <h1>98.89%</h1>
+                            <p>Выигрышных сделок</p>
+                        </div>
+                        <div class="number">
+                            <h1>99.9%</h1>
+                            <p>Положительных отзывов</p>
+                        </div>
+                        <div class="number">
+                            <h1>$14 259</h1>
+                            <p>В среднем зарабатывают трейдеры ежедневно</p>
+                        </div>
+                        <div class="number">
+                            <h1>128.722+</h1>
+                            <p>Трейдеров по всему миру</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="advantages" data-aos="fade-up"
+            data-aos-duration="1500">
+                <h1>Преймущества</h1>
+                <div class="container_advantages">
+                    <div class="advantage">
+                        <div class="min_wrap">
+                            <img src="img/safe.svg" alt="">
+                            <h2>Надежное ПО</h2>
+                        </div>
+                        <p>Наша команда разрабатывает ПО, вкладывая все свои знания и навыки</p>
+                    </div>
+                    <div class="advantage">
+                        <div class="min_wrap">
+                            <img src="img/support.svg" alt="">
+                            <h2>Поддержка 24/7</h2>
+                        </div>
+                        <p>Служба поддержки поможет решить все возникающие проблемы!</p>
+                    </div>
+
+                    <div class="advantage">
+                        <div class="min_wrap">
+                            <img src="img/algorithm.svg" alt="">
+                            <h2>Простой Алгоритм</h2>
+                        </div>
+                        <p>Операции выполняет робот. <br>
+                            Поэтому для новичков такой способ эффективнее,
+                            чем вручную обрабатывать сделки.
+                        </p>
+                    </div>
+
+                    <div class="advantage">
+                        <div class="min_wrap">
+                            <img src="img/Vector.svg" alt="">
+                            <h2>Удобные Инструменты</h2>
+                        </div>
+                        <p>Профессиональные трейдеры уже опробовали наше ПО и оценили его эффективность и удобство на <span>9/10</span>.</p>
+
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="otzivi" data-aos="fade-up"
+        data-aos-duration="1500">
+            <div class="wrapper">
+                <h1>Отзывы от пользователей</h1>
+            </div>
+            <div class="container-slider2">
+                <div class="slider-wrapper">
+                    <div class="rewiew-list image-list"> 
+                        <div class="slide">
+                            <div class="name">
+                                <img src="img/avatar.jpg" alt="">
+                                <p class="user">Дмитрий</p>
+                            </div>
+                            <p class="txt">Доброго времени суток! Использую робота уже на протяжении 2х недель и могу с уверенность сказать - это лучшее, что я видел. Теперь по подробнее. После прочтения инструкции я сразу же вышел на реальную торговлю. И тут прям много эмоций. В первый же день робот принёс мне 87% к моему начальному депозиту. Заработал буквально за пару часов. Так что с уверенностью могу рекомендовать данный софт на авто сделках.</p>
+                        </div>
+                       
+                        <div class="slide">
+                            <div class="name">
+                                <img src="img/avatar.jpg" alt="">
+                                <p class="user">Артём</p>
+                            </div>
+                            <p class="txt">Всем привет! Если коротко о PRO OPTION PLUS AUTO, то он клёвый. Заработать можно легко и 100% к депозиту за несколько часов. Советую в размеренном режиме спокойно торговать, не жадничать и не гнаться за миллиардами, уделяя всего пару часов в день. Все таки это не 100% проходимость сделок, а всего лишь 93%. Есть небольшие риски. Конечно, лучше прочитать первоначально инструкцию по настройки софта, всё разложить по полочкам и комфортно запускаться. Всем профита!</p>
+                        </div>
+
+                        <div class="slide">
+                            <div class="name">
+                                <img src="img/avatar.jpg" alt="">
+                                <p class="user">Иван Хакимов</p>
+                            </div>
+                            <p class="txt">Здравствуйте! Начну по факту без воды. Почти сразу же вышел на реальную торговлю. И тут прям много эмоций. В первый же день робот заработал мне 67% к моему начальному депозиту, а это на минуточку 371$. Это крутой результат однозначно. Советую всем использовать софт на авто сделках. Андрюхе отдельное спасибо за такую разработку. Лучший, просто ЛУЧШИЙ!</p>
+                        </div>
+
+                        <div class="slide">
+                            <div class="name">
+                                <img src="img/avatar.jpg" alt="">
+                                <p class="user">Виталий Беляков</p>
+                            </div>
+                            <p class="txt">Привет. Занимаюсь криптой несколько лет. А тут бац! В моменте просел рынок. Очень был расстроен. Стал искать дополнительный заработок. Случайно наткнулся на Андрея и его проект «PRO OPTION PLUS AUTO». Я сначала не поверил, что так легко и просто можно зарабатывать деньги на Бинарках, но когда активировал софт на авто торговли, я обалдел. Тут просто без слов, а одни эмоции. Миллионы $, конечно не заработать, но по 300-450 баксов в день стабильно получается делать. А это разве не результат? Всем удачи!</p>
+                        </div>
+
+                        <div class="slide">
+                            <div class="name">
+                                <img src="img/avatar.jpg" alt="">
+                                <p class="user">Светлана Оленикова</p>
+                            </div>
+                            <p class="txt">Привет! Положила я значит 120$. Это примерно 11 тысяч рублей по сегодняшнему курсу. Но да ладно. На следующий день проснулась, баланс уже 2 348,43$. Автор проекта, это как так? Это точно безопасно? Я сейчас сижу и думаю, это сон или реальность.</p>
+                        </div>
+
+                        <div class="slide">
+                            <div class="name">
+                                <img src="img/avatar.jpg" alt="">
+                                <p class="user">Данил Кузнецов</p>
+                            </div>
+                            <p class="txt">С PRO OPTION PLUS AUTO совсем недолго работаю. Рынок всегда оставляет желать лучшего, но даже при таких условиях вижу, что депозит растёт и очень даже хорошо. Изначально пополнил 155$ на брокере Pocket Option. Спустя 2е суток баланс сейчас 691$. Месячная моя зарплата, а прошло всего лишь 2 дня. Андрюхе большое спасибо, что создал такую мощь. Тем более абсолютно все бесплатно, ничего и никому платить за это не нужно! Огромный плюс - хорошие возможности. Залетайте смело, не пожалеете!</p>
+                        </div>
+
+                        <div class="slide">
+                            <div class="name">
+                                <img src="img/avatar.jpg" alt="">
+                                <p class="user">Андрей</p>
+                            </div>
+                            <p class="txt">Здоровенько всем! Зарабатываю каждую ночь + - 1000 баксов. Ставлю на авто-торговлю и ложусь спать. Просыпаюсь с 80 долларов, почти до 1000 доходит. В шоке, просто в шоке. За 7-8 часов моего сна. Не отключайте, пожалуйста, программу, пусть еще поработает. Андрей, как Вас можно отблагодарить? Или поддержать?</p>
+                        </div>
+
+                        <div class="slide">
+                            <div class="name">
+                                <img src="img/avatar.jpg" alt="">
+                                <p class="user">Глеб</p>
+                            </div>
+                            <p class="txt">Отличный результат! Просто великолепный! 255 плюсов и 13 минусов. Не знаю, как у остальных, но у меня вообще день замечательный, просто огонь. PRO OPTION PLUS AUTO - лучший! И это факт доказывает!</p>
+                        </div>
+
+                        <div class="slide">
+                            <div class="name">
+                                <img src="img/avatar.jpg" alt="">
+                                <p class="user">Атон</p>
+                            </div>
+                            <p class="txt">Хочу поблагодарить разработчиков за такую прекрасную разработку. ПРО ПЛЮС АВТО пользуюсь уже 2 месяца. Сначала не очень получалось, но через пару дней практики втянула меня и начало получаться. По итогу за 2 месяца с помощью программы наторговал на свой кредит около 570 тысяч рублей и перекрыл его полностью в банке. Еще раз спасибо. Теперь буду торговать на свадьбу. Уверен, что за месяца 2-3 заработаю нужную сумму. 💪 Новичкам советую внимательно изучить инструкцию по правильной настройки программы, чтобы с первых минут делать кэш, а не тянуть время и не гонять баланс туда-сюда. Удачи!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="buttons" data-aos="fade-up"
+            data-aos-duration="1500" id="faq">
+                <button class="button prev" id="prev-slide">
+                    <img src="img/before.svg" alt="">
+                </button>
+                <button class="button next" id="next-slide" class="icon">
+                    <img src="img/after.svg" alt="">
+                </button>
+            </div>
+
+           
+        </div>
+
+        <div class="faq" data-aos="fade-up"
+        data-aos-duration="1500">
+            <div class="wrapper">
+                <div class="title_accordion">
+                    <img src="img/Accordion.svg" alt="">
+                    <h1>FAQ</h1>
+                </div>
+
+                <section>
+                    <ul class="accordion">
+                        <li class="accordion_li">
+                            <label for="first">Кто я такой?<img src="img/plus.svg" alt="" class="img1"></label>
+                            <div class="content">
+                                <p>Я уже более 12-ти лет зарабатываю в интернете.<div class="br"></div>Мой основной источник заработка — торговля бинарными опционами.</p>
+                            </div>
+                        </li>
+                
+                        <li class="accordion_li">
+                            <label for="second">Что может ваше ПО?<img src="img/plus.svg" alt="" class="img1"></label>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste et eveniet eum odit. Doloribus labore debitis dolorem aliquid assumenda itaque culpa dolor architecto, voluptatibus delectus aliquam? Debitis veritatis unde accusantium facere maxime, aliquid pariatur commodi voluptate suscipit? Culpa, minus suscipit.</p>
+                            </div>
+                        </li>
+                
+                        <li class="accordion_li">
+                            <label for="third">Будет ли сложно заработать новичку?<img src="img/plus.svg" alt="" class="img1"></label>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, sit!</p>
+                            </div>
+                        </li>
+                
+                        <li class="accordion_li">
+                            <label for="fourth">Можно ли использовать один аккаунт на разных ПК?<img src="img/plus.svg" alt="" class="img1"></label>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, sit!</p>
+                            </div>
+                        </li>
+                
+                        <li class="accordion_li">
+                            <label for="fifth">Какие гарантии у вашего ПО?<img src="img/plus.svg" alt="" class="img1"></label>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, sit!</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="back_footer">
+            <div class="wrapper">
+                <div class="container_footer ">
+                    <div class="container_footer_text_logo">
+                        <div class="logo">
+                            <img src="img/logo.svg" alt="">
+                            <p>Торговля бинарными опционами, позволяет получать прибыль, прогнозируя движение цены.</p>
+                        </div>
+                        <div class="mess">
+                            <p>Соц. сети</p>
+                            <div class="mess2">
+                                <a href="#">YouTube</a>
+                                <a href="#">Телеграм канал</a>
+                                <a href="#">PRO OPTION PLUS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icons">
+                        <div class="icon">
+                            <a href="#"><img src="img/youtube.svg" alt=""></a>
+                        </div>
+                        <div class="icon2">
+                            <a href="#"><img src="img/tg.svg" alt=""></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><img src="img/robot.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
